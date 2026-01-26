@@ -16,8 +16,8 @@ from pinecone import Pinecone
 import pandas as pd
 
 
-# 1. ตั้งค่าข้อมูลการเชื่อมต่อ (ก๊อปปี้จากหน้าเว็บของคุณ)
-API_KEY = "ใส่_API_KEY_ของคุณที่นี่"
+# 1. ตั้งค่าข้อมูลการเชื่อมต่อ
+API_KEY = "ใส่_API_KEY_"
 INDEX_HOST = "https://usai-effnet-features-kbyt94f.svc.aped-4627-b74a.pinecone.io"
 
 try:
