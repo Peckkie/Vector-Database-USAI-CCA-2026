@@ -1,1 +1,42 @@
 # Vector-Database-USAI-CCA-2026
+
+### Install and Setup Env For Pinecone Database
+```
+conda create -n pinecone_env python=3.9 -y
+conda activate pinecone_env
+pip install "pinecone[grpc]" 
+pip install pandas 
+pip install numpy
+pip install jupyter ipykernel
+python -m ipykernel install --user --name pinecone_env --display-name "Python 3.9 (Pinecone_New)"
+```
+### For Check
+```
+from pinecone import Pinecone
+import pandas as pd
+
+
+# 1. ตั้งค่าข้อมูลการเชื่อมต่อ (ก๊อปปี้จากหน้าเว็บของคุณ)
+API_KEY = "ใส่_API_KEY_ของคุณที่นี่"
+INDEX_HOST = "https://usai-effnet-features-kbyt94f.svc.aped-4627-b74a.pinecone.io"
+
+try:
+    # 2. เริ่มต้นการเชื่อมต่อ
+    pc = Pinecone(api_key=API_KEY)
+    index = pc.Index(host=INDEX_HOST)
+    
+    # 3. ทดลองเรียกดูสถิติของ Database
+    stats = index.describe_index_stats()
+    
+    print("✅ [Status] เชื่อมต่อสำเร็จ!")
+    print("-" * 30)
+    print(f"Dimension ในระบบ: {stats['dimension']}")
+    print(f"จำนวนข้อมูลปัจจุบัน (Total Records): {stats['total_vector_count']}")
+    print("-" * 30)
+
+except Exception as e:
+    print("❌ [Status] การเชื่อมต่อล้มเหลว!")
+    print(f"Error: {e}")
+```
+
+---
