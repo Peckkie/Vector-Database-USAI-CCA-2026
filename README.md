@@ -7,6 +7,7 @@ conda activate pinecone_env
 pip install "pinecone[grpc]" 
 pip install pandas 
 pip install numpy
+pip install tqdm
 pip install jupyter ipykernel
 python -m ipykernel install --user --name pinecone_env --display-name "Python 3.9 (Pinecone_New)"
 ```
