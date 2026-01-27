@@ -1,6 +1,6 @@
 # Vector-Database-USAI-CCA-2026
 ---
-##  Install and Set Up Env For  Unlearn Model 
+##  🤖 Install and Set Up Env For  Unlearn Model 
 
 ### 🐍 Create Conda Environment 
 - Python **3.6.9** and Create Conda Environment
