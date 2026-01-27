@@ -2,19 +2,19 @@
 ---
 ##  🤖 Install and Set Up Env For  Unlearn Model 
 
-### 🐍 Create Conda Environment 
-- Python **3.6.9** and Create Conda Environment
+### 🐍 [1]-Create Conda Environment 
+- [1.1]-Python **3.6.9** and Create Conda Environment
 ```
 conda create -n bitnet-unlearn-env python=3.6.9 -y
 conda activate bitnet-unlearn-env 
 ```
-- Add Virtual Environment to Jupyter Notebook
+- [1.2]-Add Virtual Environment to Jupyter Notebook
 ```
 pip install --user ipykernel
 python -m ipykernel install --user --name=bitnet-unlearn-env 
 ```
 
-## 📦 Required Packages
+### 📦 [2]-Required Packages
 
 Key libraries and versions:
 
