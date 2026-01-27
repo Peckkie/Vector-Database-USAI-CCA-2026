@@ -1,5 +1,52 @@
 # Vector-Database-USAI-CCA-2026
+---
+##  Install and Set Up Env For  Unlearn Model 
 
+### 🐍 Create Conda Environment 
+- Python **3.6.9** and Create Conda Environment
+```
+conda create -n bitnet-unlearn-env python=3.6.9 -y
+conda activate bitnet-unlearn-env 
+```
+- Add Virtual Environment to Jupyter Notebook
+```
+pip install --user ipykernel
+python -m ipykernel install --user --name=bitnet-unlearn-env 
+```
+
+## 📦 Required Packages
+
+Key libraries and versions:
+
+| Package | Version |
+|------|--------|
+| tensorflow | 2.6.0rc0 |
+| keras | 2.6.0rc0 |
+| numpy | 1.19.5 |
+| scipy | 1.4.1 |
+| pandas | 1.1.5 |
+| matplotlib | 3.3.4 |
+| opencv-python | 4.6.0.66 |
+| scikit-learn | 0.23.0 |
+| torch | 1.10.1 |
+| torchvision | 0.11.2 |
+
+```
+pip install \
+tensorflow==2.6.0rc0 \
+keras==2.6.0rc0 \
+numpy==1.19.5 \
+scipy==1.4.1 \
+pandas==1.1.5 \
+matplotlib==3.3.4 \
+opencv-python==4.6.0.66 \
+scikit-learn==0.23.0 \
+torch==1.10.1 \
+torchvision==0.11.2
+```
+
+
+---
 ### Install and Setup Env For Pinecone Database
 ```
 conda create -n pinecone_env python=3.9 -y
