@@ -30,6 +30,8 @@ Key libraries and versions:
 | scikit-learn | 0.23.0 |
 | torch | 1.10.1 |
 | torchvision | 0.11.2 |
+| scikit-image | 0.17.2 |
+| Pillow | 8.4.0 |
 
 ```
 pip install \
@@ -42,7 +44,9 @@ matplotlib==3.3.4 \
 opencv-python==4.6.0.66 \
 scikit-learn==0.23.0 \
 torch==1.10.1 \
-torchvision==0.11.2
+torchvision==0.11.2 \
+scikit-image==0.17.2 \
+Pillow==8.4.0
 ```
 
 
